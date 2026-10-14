@@ -1,13 +1,13 @@
 # Union LLM
 
 Ejecuta **un mismo modelo** repartiendo sus capas entre los dispositivos que
-Union LAN tiene incorporados: el central y cualquier movil que anadas con
+Union LAN tiene incorporados: el central y cualquier movil que añadas con
 `./union-lan invitar`. Usa la CPU de cada uno, el backend RPC de `llama.cpp`
 y los alias SSH de Union LAN.
 
 Repartir capas permite ejecutar un modelo que **no cabe en un solo telefono**:
 se suma la memoria. No suma velocidad. Cada token atraviesa las capas en orden,
-un dispositivo tras otro, y cada salto por la Wi-Fi anade latencia. Por eso el
+un dispositivo tras otro, y cada salto por la Wi-Fi añade latencia. Por eso el
 programa usa, por defecto, **el menor numero de dispositivos en el que cabe el
 modelo**. Los resultados medidos estan en
 [`resultados/OPTIMIZACION.md`](resultados/OPTIMIZACION.md).
