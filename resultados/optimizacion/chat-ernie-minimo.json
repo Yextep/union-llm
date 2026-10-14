@@ -1,0 +1,63 @@
+{
+  "fecha_utc": "2026-10-14T17:59:46.819503+00:00",
+  "manifiesto": "modelo-ernie45-21b-a3b-q2kxl.json",
+  "borrador": null,
+  "reparto": {
+    "central": 6,
+    "movil3": 11,
+    "movil2": 11
+  },
+  "sin_usar": {},
+  "configuracion": {
+    "nodos": "auto",
+    "excluir": [],
+    "dispositivos": "minimo",
+    "central": "cpu",
+    "threads": "rapidos",
+    "puerto_rpc": 60150,
+    "reserva_mib": 800,
+    "reserva_central_mib": 1200,
+    "llama_commit": "4413a192410fad1f054e9216114087a3e01527a0"
+  },
+  "carga_segundos": 440,
+  "intentos_de_carga": 1,
+  "mensajes": [
+    "Buscando dispositivos…",
+    "Buscando dispositivos y calculando el reparto…",
+    "Cargando las capas del modelo en 3 dispositivos…"
+  ],
+  "respuestas": [
+    {
+      "pregunta": "Escribe una funcion en Python que devuelva los numeros primos menores que n usando la criba de Eratostenes. Incluye un comentario breve.",
+      "segundos": 60.6,
+      "respuesta": "\n```python\ndef sieve_of_eratosthenes(n):\n    \"\"\"\n    Devuelve una lista de números primos menores que n usando el algoritmo de la criba de Eratostenes.\n    \"\"\"\n    if n <= 2:",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 115,
+        "prompt_ms": 31682.901,
+        "prompt_per_token_ms": 275.5034869565217,
+        "prompt_per_second": 3.6297181246123893,
+        "predicted_n": 64,
+        "predicted_ms": 28902.161,
+        "predicted_per_token_ms": 458.7644603174603,
+        "predicted_per_second": 2.179767803521681
+      }
+    },
+    {
+      "pregunta": "Explica en tres frases que es una red LAN y para que sirve.",
+      "segundos": 35.7,
+      "respuesta": "\nUna **Red Local Area Network (LAN)** es una red de computadoras o dispositivos conectados físicamente en un área limitada, como una oficina, escuela o hogar.  \nSirve para permitir la comunicación y compartición de recursos, como archivos, imp",
+      "timings": {
+        "cache_n": 73,
+        "prompt_n": 21,
+        "prompt_ms": 6191.165,
+        "prompt_per_token_ms": 294.817380952381,
+        "prompt_per_second": 3.3919302748351883,
+        "predicted_n": 64,
+        "predicted_ms": 28200.19,
+        "predicted_per_token_ms": 447.6220634920635,
+        "predicted_per_second": 2.2340275012331476
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "repo": "unsloth/ERNIE-4.5-21B-A3B-PT-GGUF",
+  "revision": "de45a831ceac3c876bb63f39bc60406a7d07e3bb",
+  "archivo": "ERNIE-4.5-21B-A3B-PT-UD-Q2_K_XL.gguf",
+  "bytes": 8222883616,
+  "lfs": {
+    "sha256": "a6dd43c63cfe8b1aafa061cd4752bae9b3cc3e6dd5035d15471de9162bcfd6f7",
+    "size": 8222883616,
+    "pointerSize": 135
+  },
+  "license": "apache-2.0"
+}

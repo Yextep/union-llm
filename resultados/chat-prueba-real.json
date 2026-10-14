@@ -1,0 +1,91 @@
+{
+  "fecha_utc": "2026-10-13T06:05:07.205791+00:00",
+  "estado": {
+    "fase": "listo",
+    "mensaje": "Los tres dispositivos estan listos.",
+    "ocupado": false,
+    "modelo": "Qwen2.5-Coder 3B",
+    "contexto": 2048,
+    "max_tokens": 384,
+    "nodos": [
+      {
+        "nombre": "central",
+        "conectado": true
+      },
+      {
+        "nombre": "movil2",
+        "conectado": true
+      },
+      {
+        "nombre": "movil3",
+        "conectado": true
+      }
+    ]
+  },
+  "primera_pregunta": "Responde solo con un bloque de codigo Python que defina sumar(a, b) y devuelva a + b.",
+  "codigo": {
+    "respuesta": "```python\ndef sumar(a, b):\n    return a + b\n```",
+    "primer_token_segundos": 30.680719103023876,
+    "segundos_http": 56.56682513502892,
+    "metadatos": {
+      "segundos": 56.6,
+      "tokens": 18,
+      "limite": false
+    }
+  },
+  "seguimiento": {
+    "respuesta": "5",
+    "primer_token_segundos": 9.817315933003556,
+    "segundos_http": 12.956255307013635,
+    "metadatos": {
+      "segundos": 12.9,
+      "tokens": 2,
+      "limite": false
+    }
+  },
+  "trabajadores_antes": {
+    "central": {
+      "pid": 24802,
+      "cpu_seconds": 3.19,
+      "rss_kib": 622812,
+      "peak_rss_kib": 622812
+    },
+    "movil2": {
+      "pid": 21656,
+      "cpu_seconds": 9.5,
+      "rss_kib": 578556,
+      "peak_rss_kib": 578556
+    },
+    "movil3": {
+      "pid": 26854,
+      "cpu_seconds": 14.38,
+      "rss_kib": 801664,
+      "peak_rss_kib": 801664
+    }
+  },
+  "trabajadores_despues": {
+    "central": {
+      "pid": 24802,
+      "cpu_seconds": 31.7,
+      "rss_kib": 645232,
+      "peak_rss_kib": 645232
+    },
+    "movil2": {
+      "pid": 21656,
+      "cpu_seconds": 39.59,
+      "rss_kib": 596556,
+      "peak_rss_kib": 596556
+    },
+    "movil3": {
+      "pid": 26854,
+      "cpu_seconds": 54.72,
+      "rss_kib": 819200,
+      "peak_rss_kib": 819200
+    }
+  },
+  "cpu_segundos_generacion": {
+    "central": 28.51,
+    "movil2": 30.09,
+    "movil3": 40.34
+  }
+}

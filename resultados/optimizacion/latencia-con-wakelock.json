@@ -1,0 +1,44 @@
+{
+  "movil2": {
+    "ping_wifi": {
+      "mediana_ms": 4.06,
+      "p90_ms": 32.7,
+      "max_ms": 35.3,
+      "muestras": 50
+    },
+    "tcp_por_tunel_ssh": {
+      "mediana_ms": 13.69,
+      "p90_ms": 44.03,
+      "max_ms": 79.59,
+      "muestras": 200
+    }
+  },
+  "movil3": {
+    "ping_wifi": {
+      "mediana_ms": 12.85,
+      "p90_ms": 73.4,
+      "max_ms": 123.0,
+      "muestras": 50
+    },
+    "tcp_por_tunel_ssh": {
+      "mediana_ms": 36.65,
+      "p90_ms": 70.69,
+      "max_ms": 254.88,
+      "muestras": 200
+    }
+  },
+  "movil4": {
+    "ping_wifi": {
+      "mediana_ms": 16.7,
+      "p90_ms": 47.4,
+      "max_ms": 66.0,
+      "muestras": 54
+    },
+    "tcp_por_tunel_ssh": {
+      "mediana_ms": 32.77,
+      "p90_ms": 58.92,
+      "max_ms": 164.29,
+      "muestras": 200
+    }
+  }
+}

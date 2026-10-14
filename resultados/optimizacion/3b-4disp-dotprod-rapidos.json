@@ -1,0 +1,203 @@
+{
+  "modo": "3b-4disp-dotprod-rapidos",
+  "segundos_totales_incluye_carga": 414.59768286300823,
+  "comando": [
+    "/root/proyectos/union-llm/build-dotprod/bin/llama-bench",
+    "-m",
+    "modelos/qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+    "-t",
+    "2",
+    "-C",
+    "0xc0",
+    "--cpu-strict",
+    "1",
+    "-p",
+    "64",
+    "-n",
+    "32",
+    "-r",
+    "2",
+    "-b",
+    "32",
+    "-ub",
+    "32",
+    "-o",
+    "json",
+    "--rpc",
+    "127.0.0.1:60150,127.0.0.1:60151",
+    "-ngl",
+    "37",
+    "-sm",
+    "layer",
+    "-ts",
+    "19/18"
+  ],
+  "mediciones": [
+    {
+      "build_commit": "4413a19",
+      "build_number": 1,
+      "cpu_info": "CPU",
+      "gpu_info": "127.0.0.1:60150, 127.0.0.1:60151",
+      "backends": "RPC",
+      "model_filename": "modelos/qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+      "model_type": "qwen2 3B Q4_K - Medium",
+      "model_size": 2098976768,
+      "model_n_params": 3397103616,
+      "n_batch": 32,
+      "n_ubatch": 32,
+      "n_threads": 2,
+      "cpu_mask": "0xc0",
+      "cpu_strict": true,
+      "poll": 50,
+      "type_k": "f16",
+      "type_v": "f16",
+      "n_gpu_layers": 37,
+      "n_cpu_moe": 0,
+      "split_mode": "layer",
+      "main_gpu": 0,
+      "no_kv_offload": false,
+      "flash_attn": -1,
+      "devices": "auto",
+      "tensor_split": "19.00/18.00",
+      "tensor_buft_overrides": "none",
+      "load_mode": "auto",
+      "lazy_mode": "auto",
+      "embeddings": false,
+      "no_op_offload": 0,
+      "no_host": false,
+      "repack": true,
+      "fit_target": 0,
+      "fit_min_ctx": 0,
+      "n_prompt": 64,
+      "n_gen": 0,
+      "n_depth": 0,
+      "test_time": "2026-10-14T11:02:14Z",
+      "avg_ns": 13981858198,
+      "stddev_ns": 483600381,
+      "avg_ts": 4.5801,
+      "stddev_ts": 0.158415,
+      "samples_ns": [
+        13639901089,
+        14323815307
+      ],
+      "samples_ts": [
+        4.69212,
+        4.46808
+      ]
+    },
+    {
+      "build_commit": "4413a19",
+      "build_number": 1,
+      "cpu_info": "CPU",
+      "gpu_info": "127.0.0.1:60150, 127.0.0.1:60151",
+      "backends": "RPC",
+      "model_filename": "modelos/qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+      "model_type": "qwen2 3B Q4_K - Medium",
+      "model_size": 2098976768,
+      "model_n_params": 3397103616,
+      "n_batch": 32,
+      "n_ubatch": 32,
+      "n_threads": 2,
+      "cpu_mask": "0xc0",
+      "cpu_strict": true,
+      "poll": 50,
+      "type_k": "f16",
+      "type_v": "f16",
+      "n_gpu_layers": 37,
+      "n_cpu_moe": 0,
+      "split_mode": "layer",
+      "main_gpu": 0,
+      "no_kv_offload": false,
+      "flash_attn": -1,
+      "devices": "auto",
+      "tensor_split": "19.00/18.00",
+      "tensor_buft_overrides": "none",
+      "load_mode": "auto",
+      "lazy_mode": "auto",
+      "embeddings": false,
+      "no_op_offload": 0,
+      "no_host": false,
+      "repack": true,
+      "fit_target": 0,
+      "fit_min_ctx": 0,
+      "n_prompt": 0,
+      "n_gen": 32,
+      "n_depth": 0,
+      "test_time": "2026-10-14T11:02:58Z",
+      "avg_ns": 22875101345,
+      "stddev_ns": 470167500,
+      "avg_ts": 1.399196,
+      "stddev_ts": 0.028759,
+      "samples_ns": [
+        22542642752,
+        23207559939
+      ],
+      "samples_ts": [
+        1.41953,
+        1.37886
+      ]
+    }
+  ],
+  "reparto": {
+    "central": 19,
+    "movil3": 17
+  },
+  "fecha_utc": "2026-10-14T11:03:48.849026+00:00",
+  "modelo": "qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+  "configuracion": {
+    "nodos": "auto",
+    "excluir": [],
+    "dispositivos": "todos",
+    "central": "rpc",
+    "threads": "rapidos",
+    "puerto_rpc": 60150,
+    "reserva_mib": 800,
+    "reserva_central_mib": 1200,
+    "llama_commit": "4413a192410fad1f054e9216114087a3e01527a0"
+  },
+  "compilacion": "build-dotprod",
+  "recursos": {
+    "central": {
+      "cpu": 8,
+      "rapidos": [
+        6,
+        7
+      ],
+      "memoria_kib": {
+        "MemTotal": 7629068,
+        "MemAvailable": 4264732
+      },
+      "huerfanos_detenidos": 0,
+      "binario": "70d93c19c758e389e4dd025b59f6b866eff203d4f6cc0a7d61d064f280ffbbec"
+    },
+    "movil3": {
+      "cpu": 8,
+      "rapidos": [
+        6,
+        7
+      ],
+      "memoria_kib": {
+        "MemTotal": 7866316,
+        "MemAvailable": 4313692
+      },
+      "huerfanos_detenidos": 0,
+      "binario": "15070931b719722b7c6437561da6a5825c17b270897cc45d704b86de67c7b9ad"
+    },
+    "movil4": {
+      "cpu": 8,
+      "rapidos": [
+        6,
+        7
+      ],
+      "memoria_kib": {
+        "MemTotal": 5588156,
+        "MemAvailable": 2182328
+      },
+      "huerfanos_detenidos": 0,
+      "binario": "15070931b719722b7c6437561da6a5825c17b270897cc45d704b86de67c7b9ad"
+    }
+  },
+  "sin_usar": {
+    "movil2": "Connection closed by UNKNOWN port 65535"
+  }
+}

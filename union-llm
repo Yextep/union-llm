@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_dir=$(dirname "$(readlink -f "$0")")
+if [ "${1:-}" = chat ]; then
+    shift
+    exec python3 "$project_dir/chat.py" "$@"
+fi
+exec python3 "$project_dir/cluster.py" "$@"

@@ -1,0 +1,358 @@
+{
+  "fecha_utc": "2026-10-13T04:37:25.024156+00:00",
+  "configuracion": {
+    "moviles": [
+      "movil2",
+      "movil3"
+    ],
+    "threads": 4,
+    "puerto_rpc": 60150,
+    "reparto": "1,1,1",
+    "llama_commit": "4413a192410fad1f054e9216114087a3e01527a0"
+  },
+  "recursos": {
+    "central": {
+      "cpu": 8,
+      "memoria_kib": {
+        "MemTotal": 7629068,
+        "MemAvailable": 2544404
+      }
+    },
+    "movil2": {
+      "cpu": 8,
+      "memoria_kib": {
+        "MemTotal": 7672196,
+        "MemAvailable": 3105672
+      }
+    },
+    "movil3": {
+      "cpu": 8,
+      "memoria_kib": {
+        "MemTotal": 7866316,
+        "MemAvailable": 3879480
+      }
+    }
+  },
+  "modelo": {
+    "repo": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "archivo": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "bytes": 491400032,
+    "lfs": {
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+      "size": 491400032,
+      "pointerSize": 134
+    }
+  },
+  "central": {
+    "modo": "central",
+    "segundos_totales_incluye_carga": 9.721762391971424,
+    "comando": [
+      "/root/proyectos/union-llm/build/bin/llama-bench",
+      "-m",
+      "/root/proyectos/union-llm/modelos/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "-t",
+      "4",
+      "-p",
+      "32",
+      "-n",
+      "16",
+      "-r",
+      "2",
+      "-b",
+      "32",
+      "-ub",
+      "32",
+      "-o",
+      "json",
+      "-ngl",
+      "0"
+    ],
+    "mediciones": [
+      {
+        "build_commit": "4413a19",
+        "build_number": 1,
+        "cpu_info": "CPU",
+        "gpu_info": "",
+        "backends": "CPU",
+        "model_filename": "/root/proyectos/union-llm/modelos/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "model_type": "qwen2 1B Q4_K - Medium",
+        "model_size": 485452288,
+        "model_n_params": 630167424,
+        "n_batch": 32,
+        "n_ubatch": 32,
+        "n_threads": 4,
+        "cpu_mask": "0x0",
+        "cpu_strict": false,
+        "poll": 50,
+        "type_k": "f16",
+        "type_v": "f16",
+        "n_gpu_layers": 0,
+        "n_cpu_moe": 0,
+        "split_mode": "layer",
+        "main_gpu": 0,
+        "no_kv_offload": false,
+        "flash_attn": -1,
+        "devices": "auto",
+        "tensor_split": "0.00",
+        "tensor_buft_overrides": "none",
+        "load_mode": "auto",
+        "lazy_mode": "auto",
+        "embeddings": false,
+        "no_op_offload": 0,
+        "no_host": false,
+        "repack": true,
+        "fit_target": 0,
+        "fit_min_ctx": 0,
+        "n_prompt": 32,
+        "n_gen": 0,
+        "n_depth": 0,
+        "test_time": "2026-10-13T04:37:31Z",
+        "avg_ns": 1296807890,
+        "stddev_ns": 38539305,
+        "avg_ts": 24.686877,
+        "stddev_ts": 0.733659,
+        "samples_ns": [
+          1269556510,
+          1324059271
+        ],
+        "samples_ts": [
+          25.2057,
+          24.1681
+        ]
+      },
+      {
+        "build_commit": "4413a19",
+        "build_number": 1,
+        "cpu_info": "CPU",
+        "gpu_info": "",
+        "backends": "CPU",
+        "model_filename": "/root/proyectos/union-llm/modelos/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "model_type": "qwen2 1B Q4_K - Medium",
+        "model_size": 485452288,
+        "model_n_params": 630167424,
+        "n_batch": 32,
+        "n_ubatch": 32,
+        "n_threads": 4,
+        "cpu_mask": "0x0",
+        "cpu_strict": false,
+        "poll": 50,
+        "type_k": "f16",
+        "type_v": "f16",
+        "n_gpu_layers": 0,
+        "n_cpu_moe": 0,
+        "split_mode": "layer",
+        "main_gpu": 0,
+        "no_kv_offload": false,
+        "flash_attn": -1,
+        "devices": "auto",
+        "tensor_split": "0.00",
+        "tensor_buft_overrides": "none",
+        "load_mode": "auto",
+        "lazy_mode": "auto",
+        "embeddings": false,
+        "no_op_offload": 0,
+        "no_host": false,
+        "repack": true,
+        "fit_target": 0,
+        "fit_min_ctx": 0,
+        "n_prompt": 0,
+        "n_gen": 16,
+        "n_depth": 0,
+        "test_time": "2026-10-13T04:37:37Z",
+        "avg_ns": 1289878489,
+        "stddev_ns": 46069627,
+        "avg_ts": 12.412186,
+        "stddev_ts": 0.443317,
+        "samples_ns": [
+          1322454635,
+          1257302343
+        ],
+        "samples_ts": [
+          12.0987,
+          12.7257
+        ]
+      }
+    ]
+  },
+  "distribuido": {
+    "modo": "distribuido",
+    "segundos_totales_incluye_carga": 332.1109978420427,
+    "comando": [
+      "/root/proyectos/union-llm/build/bin/llama-bench",
+      "-m",
+      "/root/proyectos/union-llm/modelos/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "-t",
+      "4",
+      "-p",
+      "32",
+      "-n",
+      "16",
+      "-r",
+      "2",
+      "-b",
+      "32",
+      "-ub",
+      "32",
+      "-o",
+      "json",
+      "--rpc",
+      "127.0.0.1:60150,127.0.0.1:60151,127.0.0.1:60152",
+      "-ngl",
+      "99",
+      "-sm",
+      "layer",
+      "-ts",
+      "1/1/1"
+    ],
+    "mediciones": [
+      {
+        "build_commit": "4413a19",
+        "build_number": 1,
+        "cpu_info": "CPU",
+        "gpu_info": "127.0.0.1:60150, 127.0.0.1:60151, 127.0.0.1:60152",
+        "backends": "RPC",
+        "model_filename": "/root/proyectos/union-llm/modelos/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "model_type": "qwen2 1B Q4_K - Medium",
+        "model_size": 485452288,
+        "model_n_params": 630167424,
+        "n_batch": 32,
+        "n_ubatch": 32,
+        "n_threads": 4,
+        "cpu_mask": "0x0",
+        "cpu_strict": false,
+        "poll": 50,
+        "type_k": "f16",
+        "type_v": "f16",
+        "n_gpu_layers": 99,
+        "n_cpu_moe": 0,
+        "split_mode": "layer",
+        "main_gpu": 0,
+        "no_kv_offload": false,
+        "flash_attn": -1,
+        "devices": "auto",
+        "tensor_split": "1.00/1.00/1.00",
+        "tensor_buft_overrides": "none",
+        "load_mode": "auto",
+        "lazy_mode": "auto",
+        "embeddings": false,
+        "no_op_offload": 0,
+        "no_host": false,
+        "repack": true,
+        "fit_target": 0,
+        "fit_min_ctx": 0,
+        "n_prompt": 32,
+        "n_gen": 0,
+        "n_depth": 0,
+        "test_time": "2026-10-13T04:42:53Z",
+        "avg_ns": 2715633619,
+        "stddev_ns": 215475065,
+        "avg_ts": 11.820833,
+        "stddev_ts": 0.937938,
+        "samples_ns": [
+          2563269739,
+          2867997499
+        ],
+        "samples_ts": [
+          12.4841,
+          11.1576
+        ]
+      },
+      {
+        "build_commit": "4413a19",
+        "build_number": 1,
+        "cpu_info": "CPU",
+        "gpu_info": "127.0.0.1:60150, 127.0.0.1:60151, 127.0.0.1:60152",
+        "backends": "RPC",
+        "model_filename": "/root/proyectos/union-llm/modelos/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "model_type": "qwen2 1B Q4_K - Medium",
+        "model_size": 485452288,
+        "model_n_params": 630167424,
+        "n_batch": 32,
+        "n_ubatch": 32,
+        "n_threads": 4,
+        "cpu_mask": "0x0",
+        "cpu_strict": false,
+        "poll": 50,
+        "type_k": "f16",
+        "type_v": "f16",
+        "n_gpu_layers": 99,
+        "n_cpu_moe": 0,
+        "split_mode": "layer",
+        "main_gpu": 0,
+        "no_kv_offload": false,
+        "flash_attn": -1,
+        "devices": "auto",
+        "tensor_split": "1.00/1.00/1.00",
+        "tensor_buft_overrides": "none",
+        "load_mode": "auto",
+        "lazy_mode": "auto",
+        "embeddings": false,
+        "no_op_offload": 0,
+        "no_host": false,
+        "repack": true,
+        "fit_target": 0,
+        "fit_min_ctx": 0,
+        "n_prompt": 0,
+        "n_gen": 16,
+        "n_depth": 0,
+        "test_time": "2026-10-13T04:43:05Z",
+        "avg_ns": 10877873329,
+        "stddev_ns": 52832293,
+        "avg_ts": 1.470893,
+        "stddev_ts": 0.007144,
+        "samples_ns": [
+          10840515256,
+          10915231402
+        ],
+        "samples_ts": [
+          1.47594,
+          1.46584
+        ]
+      }
+    ]
+  },
+  "texto_central": "Una red LAN (Local Area Network) es un conjunto de dispositivos conectados a través de una red, generalmente en un espacio local. [end of text]\n\n\n",
+  "texto_distribuido": "Una red LAN (Local Area Network) es un conjunto de dispositivos conectados a través de una red, generalmente en un espacio local. [end of text]\n\n\n",
+  "respuesta_identica": true,
+  "trabajadores_antes": {
+    "central": {
+      "pid": 696,
+      "cpu_seconds": 0.02,
+      "rss_kib": 4484,
+      "peak_rss_kib": 4484
+    },
+    "movil2": {
+      "pid": 5431,
+      "cpu_seconds": 0.05,
+      "rss_kib": 4408,
+      "peak_rss_kib": 4408
+    },
+    "movil3": {
+      "pid": 24271,
+      "cpu_seconds": 0.07,
+      "rss_kib": 4480,
+      "peak_rss_kib": 4480
+    }
+  },
+  "trabajadores_despues": {
+    "central": {
+      "pid": 696,
+      "cpu_seconds": 17.37,
+      "rss_kib": 6796,
+      "peak_rss_kib": 103920
+    },
+    "movil2": {
+      "pid": 5431,
+      "cpu_seconds": 14.53,
+      "rss_kib": 12736,
+      "peak_rss_kib": 97416
+    },
+    "movil3": {
+      "pid": 24271,
+      "cpu_seconds": 21.71,
+      "rss_kib": 10668,
+      "peak_rss_kib": 291496
+    }
+  }
+}

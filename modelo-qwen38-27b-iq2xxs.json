@@ -1,0 +1,12 @@
+{
+  "repo": "unsloth/Qwen3.8-27B-GGUF",
+  "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+  "archivo": "Qwen3.8-27B-UD-IQ2_XXS.gguf",
+  "bytes": 7266070528,
+  "lfs": {
+    "sha256": "e792d8fb3142fe6d9171876d6da0f71f05a71028718debc72dbec93ff645e67d",
+    "size": 7266070528,
+    "pointerSize": 135
+  },
+  "license": "apache-2.0"
+}

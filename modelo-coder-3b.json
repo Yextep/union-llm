@@ -1,0 +1,12 @@
+{
+  "repo": "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
+  "revision": "f74adce6aa16316c625447af059dbebe4983757c",
+  "archivo": "qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+  "bytes": 2104932800,
+  "lfs": {
+    "sha256": "724fb256bec1ff062b2f65e4569e871ad2e95ab2a3989723d1769c54294730b7",
+    "size": 2104932800,
+    "pointerSize": 135
+  },
+  "license": "other"
+}

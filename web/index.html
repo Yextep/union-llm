@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#19392f">
+  <title>Union LLM · Chat local</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="/" aria-label="Union LLM, inicio">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 8v10a8 8 0 0 0 16 0V8M16 4v12"/></svg></span>
+      <span>union<span class="brand-light">llm</span><small>Inteligencia en tu red</small></span>
+    </a>
+    <button id="new-chat" class="new-chat"><span aria-hidden="true">＋</span> Nuevo chat</button>
+    <div class="sidebar-label">ESTA CONVERSACIÓN</div>
+    <div class="conversation" id="conversation-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H9l-5 4z"/></svg><span>Empecemos algo</span></div>
+    <div class="network-card">
+      <div class="network-title"><span class="dot" id="network-dot"></span> Tu red de trabajo <span class="local-tag">LAN</span></div>
+      <p>Un modelo, varios dispositivos.</p>
+      <div id="nodes" class="nodes"></div>
+      <div class="network-note">El cálculo se reparte por capas.</div>
+    </div>
+    <div class="sidebar-footer"><span class="lock-icon" aria-hidden="true">⌁</span> Todo ocurre en tu red local<small>Sin una API en la nube</small></div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <button id="menu" class="icon-button mobile-menu" aria-label="Mostrar dispositivos" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="model-heading"><span id="model-name">Qwen2.5-Coder 3B</span><small>Asistente local · Código y preguntas</small></div>
+      <div class="status-pill"><span class="dot" id="status-dot"></span><span id="status-short">Conectando</span></div>
+    </header>
+    <section class="chat-scroll" id="chat-scroll" aria-label="Conversación">
+      <div class="welcome" id="welcome">
+        <div class="welcome-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 13v15a12 12 0 0 0 24 0V13M24 6v20"/><circle cx="12" cy="10" r="3"/><circle cx="36" cy="10" r="3"/></svg></div>
+        <div class="eyebrow">TRES DISPOSITIVOS. UNA CONVERSACIÓN.</div>
+        <h1>¿Qué construimos hoy?</h1>
+        <p>Una idea, una duda o ese código que no termina de funcionar.<br>Tu asistente está aquí, en tu propia red.</p>
+        <div class="suggestions">
+          <button data-prompt="Explícame con un ejemplo sencillo cómo funciona una red LAN."><span class="suggestion-icon" aria-hidden="true">◇</span><strong>Entender una idea</strong><small>Explícame cómo funciona una LAN</small><span class="arrow" aria-hidden="true">↗</span></button>
+          <button data-prompt="Escribe una función en Python que reciba una lista de números y devuelva su promedio. Incluye un ejemplo."><span class="suggestion-icon code-icon" aria-hidden="true">&lt;/&gt;</span><strong>Escribir código</strong><small>Una función de Python, paso a paso</small><span class="arrow" aria-hidden="true">↗</span></button>
+          <button data-prompt="Ayúdame a revisar este código. Quiero entender el error y cómo corregirlo:\n\n"><span class="suggestion-icon" aria-hidden="true">⌕</span><strong>Resolver un problema</strong><small>Pega tu código y revisémoslo</small><span class="arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <div class="welcome-foot"><span class="tiny-line"></span> Tus mensajes se guardan en este navegador <span class="tiny-line"></span></div>
+      </div>
+      <div id="messages" class="messages" aria-live="polite" aria-relevant="additions"></div>
+    </section>
+    <footer class="composer-area">
+      <div class="notice" id="notice" role="status">Preparando el modelo…</div>
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="prompt">Tu pregunta</label>
+        <textarea id="prompt" rows="1" placeholder="Escribe una pregunta o pega tu código…" maxlength="20000"></textarea>
+        <div class="composer-bottom"><span class="composer-hint">Enter para enviar <span>·</span> Shift + Enter para nueva línea</span><button id="send" type="submit" disabled aria-label="Enviar pregunta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7M12 5v14"/></svg></button><button id="stop" type="button" hidden><span aria-hidden="true">■</span> Detener</button></div>
+      </form>
+      <p class="disclaimer">El modelo puede equivocarse. Revisa sus respuestas, especialmente el código.</p>
+    </footer>
+  </main>
+</body>
+</html>

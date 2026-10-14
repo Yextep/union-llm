@@ -1,0 +1,12 @@
+llama.cpp/
+build/
+modelos/
+cache/
+__pycache__/
+*.pyc
+*.log
+.ejecucion.lock
+tools/node_modules/
+build-*/
+runtime/
+logs/*dispositivos.txt

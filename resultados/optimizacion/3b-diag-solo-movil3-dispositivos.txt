@@ -1,0 +1,2 @@
+Available devices:
+  RPC0: 127.0.0.1:60151 (7681 MiB, 7681 MiB free)

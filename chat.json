@@ -1,0 +1,13 @@
+{
+  "modelo_manifest": "modelo-ernie45-21b-a3b-q2kxl.json",
+  "modelo_nombre": "ERNIE-4.5 21B-A3B (MoE)",
+  "puerto_chat": 8080,
+  "puerto_motor": 8081,
+  "contexto": 2048,
+  "max_tokens": 384,
+  "system_prompt": "Eres un asistente que ayuda con preguntas y programacion. Responde en espanol, de forma clara y directa. Cuando escribas codigo, usa bloques Markdown con el lenguaje. Si no sabes algo, dilo. No afirmes haber ejecutado codigo.",
+  "modelo_borrador_manifest": null,
+  "borrador_max": 3,
+  "borrador_p_min": 0.6,
+  "razonar": false
+}

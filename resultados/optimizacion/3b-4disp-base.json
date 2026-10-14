@@ -1,0 +1,211 @@
+{
+  "modo": "3b-4disp-base",
+  "segundos_totales_incluye_carga": 238.2510856379522,
+  "comando": [
+    "/root/proyectos/union-llm/build/bin/llama-bench",
+    "-m",
+    "modelos/qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+    "-t",
+    "4",
+    "-p",
+    "64",
+    "-n",
+    "32",
+    "-r",
+    "2",
+    "-b",
+    "32",
+    "-ub",
+    "32",
+    "-o",
+    "json",
+    "--rpc",
+    "127.0.0.1:60150,127.0.0.1:60151,127.0.0.1:60152",
+    "-ngl",
+    "37",
+    "-sm",
+    "layer",
+    "-ts",
+    "15/11/11"
+  ],
+  "mediciones": [
+    {
+      "build_commit": "4413a19",
+      "build_number": 1,
+      "cpu_info": "CPU",
+      "gpu_info": "127.0.0.1:60150, 127.0.0.1:60151, 127.0.0.1:60152",
+      "backends": "RPC",
+      "model_filename": "modelos/qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+      "model_type": "qwen2 3B Q4_K - Medium",
+      "model_size": 2098976768,
+      "model_n_params": 3397103616,
+      "n_batch": 32,
+      "n_ubatch": 32,
+      "n_threads": 4,
+      "cpu_mask": "0x0",
+      "cpu_strict": false,
+      "poll": 50,
+      "type_k": "f16",
+      "type_v": "f16",
+      "n_gpu_layers": 37,
+      "n_cpu_moe": 0,
+      "split_mode": "layer",
+      "main_gpu": 0,
+      "no_kv_offload": false,
+      "flash_attn": -1,
+      "devices": "auto",
+      "tensor_split": "15.00/11.00/11.00",
+      "tensor_buft_overrides": "none",
+      "load_mode": "auto",
+      "lazy_mode": "auto",
+      "embeddings": false,
+      "no_op_offload": 0,
+      "no_host": false,
+      "repack": true,
+      "fit_target": 0,
+      "fit_min_ctx": 0,
+      "n_prompt": 64,
+      "n_gen": 0,
+      "n_depth": 0,
+      "test_time": "2026-10-14T10:53:48Z",
+      "avg_ns": 17489001582,
+      "stddev_ns": 420597903,
+      "avg_ts": 3.660501,
+      "stddev_ts": 0.088032,
+      "samples_ns": [
+        17191593952,
+        17786409212
+      ],
+      "samples_ts": [
+        3.72275,
+        3.59825
+      ]
+    },
+    {
+      "build_commit": "4413a19",
+      "build_number": 1,
+      "cpu_info": "CPU",
+      "gpu_info": "127.0.0.1:60150, 127.0.0.1:60151, 127.0.0.1:60152",
+      "backends": "RPC",
+      "model_filename": "modelos/qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+      "model_type": "qwen2 3B Q4_K - Medium",
+      "model_size": 2098976768,
+      "model_n_params": 3397103616,
+      "n_batch": 32,
+      "n_ubatch": 32,
+      "n_threads": 4,
+      "cpu_mask": "0x0",
+      "cpu_strict": false,
+      "poll": 50,
+      "type_k": "f16",
+      "type_v": "f16",
+      "n_gpu_layers": 37,
+      "n_cpu_moe": 0,
+      "split_mode": "layer",
+      "main_gpu": 0,
+      "no_kv_offload": false,
+      "flash_attn": -1,
+      "devices": "auto",
+      "tensor_split": "15.00/11.00/11.00",
+      "tensor_buft_overrides": "none",
+      "load_mode": "auto",
+      "lazy_mode": "auto",
+      "embeddings": false,
+      "no_op_offload": 0,
+      "no_host": false,
+      "repack": true,
+      "fit_target": 0,
+      "fit_min_ctx": 0,
+      "n_prompt": 0,
+      "n_gen": 32,
+      "n_depth": 0,
+      "test_time": "2026-10-14T10:54:48Z",
+      "avg_ns": 25212752230,
+      "stddev_ns": 675769208,
+      "avg_ts": 1.269655,
+      "stddev_ts": 0.03403,
+      "samples_ns": [
+        24734911240,
+        25690593220
+      ],
+      "samples_ts": [
+        1.29372,
+        1.24559
+      ]
+    }
+  ],
+  "reparto": {
+    "central": 15,
+    "movil2": 11,
+    "movil3": 10
+  },
+  "fecha_utc": "2026-10-14T10:55:47.999470+00:00",
+  "modelo": "qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+  "configuracion": {
+    "nodos": "auto",
+    "excluir": [],
+    "dispositivos": "todos",
+    "central": "rpc",
+    "threads": 4,
+    "puerto_rpc": 60150,
+    "reserva_mib": 800,
+    "reserva_central_mib": 1200,
+    "llama_commit": "4413a192410fad1f054e9216114087a3e01527a0"
+  },
+  "compilacion": "build",
+  "recursos": {
+    "central": {
+      "cpu": 8,
+      "rapidos": [
+        6,
+        7
+      ],
+      "memoria_kib": {
+        "MemTotal": 7629068,
+        "MemAvailable": 4632600
+      },
+      "huerfanos_detenidos": 0,
+      "binario": "15070931b719722b7c6437561da6a5825c17b270897cc45d704b86de67c7b9ad"
+    },
+    "movil2": {
+      "cpu": 8,
+      "rapidos": [
+        6,
+        7
+      ],
+      "memoria_kib": {
+        "MemTotal": 7672196,
+        "MemAvailable": 3240568
+      },
+      "huerfanos_detenidos": 0,
+      "binario": "15070931b719722b7c6437561da6a5825c17b270897cc45d704b86de67c7b9ad"
+    },
+    "movil3": {
+      "cpu": 8,
+      "rapidos": [
+        6,
+        7
+      ],
+      "memoria_kib": {
+        "MemTotal": 7866316,
+        "MemAvailable": 4371612
+      },
+      "huerfanos_detenidos": 0,
+      "binario": "15070931b719722b7c6437561da6a5825c17b270897cc45d704b86de67c7b9ad"
+    },
+    "movil4": {
+      "cpu": 8,
+      "rapidos": [
+        6,
+        7
+      ],
+      "memoria_kib": {
+        "MemTotal": 5588156,
+        "MemAvailable": 2232112
+      },
+      "huerfanos_detenidos": 0,
+      "binario": null
+    }
+  },
+  "sin_usar": {}
+}

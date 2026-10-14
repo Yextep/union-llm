@@ -1,0 +1,11 @@
+{
+  "nodos": "auto",
+  "excluir": [],
+  "dispositivos": "minimo",
+  "central": "cpu",
+  "threads": "rapidos",
+  "puerto_rpc": 60150,
+  "reserva_mib": 800,
+  "reserva_central_mib": 1200,
+  "llama_commit": "4413a192410fad1f054e9216114087a3e01527a0"
+}

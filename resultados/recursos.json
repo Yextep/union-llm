@@ -1,0 +1,23 @@
+{
+  "central": {
+    "cpu": 8,
+    "memoria_kib": {
+      "MemTotal": 7629068,
+      "MemAvailable": 2130048
+    }
+  },
+  "movil2": {
+    "cpu": 8,
+    "memoria_kib": {
+      "MemTotal": 7672196,
+      "MemAvailable": 3163580
+    }
+  },
+  "movil3": {
+    "cpu": 8,
+    "memoria_kib": {
+      "MemTotal": 7866316,
+      "MemAvailable": 3953692
+    }
+  }
+}

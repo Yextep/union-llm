@@ -1,0 +1,59 @@
+{
+  "fecha_utc": "2026-10-14T11:56:07.235829+00:00",
+  "modelo": "qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+  "borrador": null,
+  "reparto": {
+    "central": 15,
+    "movil4": 8,
+    "movil3": 13
+  },
+  "sin_usar": {},
+  "configuracion": {
+    "nodos": "auto",
+    "excluir": [
+      "movil2"
+    ],
+    "dispositivos": "todos",
+    "central": "cpu",
+    "threads": "rapidos",
+    "puerto_rpc": 60150,
+    "reserva_mib": 800,
+    "reserva_central_mib": 1200,
+    "llama_commit": "4413a192410fad1f054e9216114087a3e01527a0"
+  },
+  "carga_segundos": 147,
+  "respuestas": [
+    {
+      "pregunta": "Escribe una funcion en Python que devuelva los numeros primos menores que n usando la criba de Eratostenes. Incluye un comentario breve.",
+      "segundos": 157.4,
+      "respuesta": "Aquí tienes una función en Python que utiliza la criba de Eratostenes para encontrar los números primos menores que un número dado `n`. La criba de Eratostenes es un algoritmo eficiente para encontrar todos los números primos hasta un número dado.\n\n```python\ndef criba_eratostenes(n):\n    # Crear una lista booleana para marcar números primos\n    is_prime = [True] * n\n    p = 2\n    while (p * p < n):\n        # Si is_prime[p] es no marcado, entonces p es un número",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 110,
+        "prompt_ms": 31901.954,
+        "prompt_per_token_ms": 290.01776363636367,
+        "prompt_per_second": 3.4480646545976463,
+        "predicted_n": 128,
+        "predicted_ms": 125466.852,
+        "predicted_per_token_ms": 987.927968503937,
+        "predicted_per_second": 1.0122195462431782
+      }
+    },
+    {
+      "pregunta": "Explica en tres frases que es una red LAN y para que sirve.",
+      "segundos": 77.7,
+      "respuesta": "Una red LAN (Local Area Network) es una red de computadoras que se encuentran en un área geográfica limitada, como una casa, un edificio o una empresa. Sirve para permitir la interconexión de dispositivos para compartir recursos como internet, archivos y programas.",
+      "timings": {
+        "cache_n": 70,
+        "prompt_n": 22,
+        "prompt_ms": 7306.789,
+        "prompt_per_token_ms": 332.12677272727274,
+        "prompt_per_second": 3.010898494537067,
+        "predicted_n": 62,
+        "predicted_ms": 62493.017,
+        "predicted_per_token_ms": 1024.4756885245902,
+        "predicted_per_second": 0.9761090587129119
+      }
+    }
+  ]
+}
